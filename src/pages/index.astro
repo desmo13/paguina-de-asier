@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Paraíso Comunista Vasco">
+	<main>
+		<div class="header">
+			<video autoplay loop muted playsinline>
+				<source src="/background-video.mp4" type="video/mp4">
+			</video>
+			<h1>Bienvenido a <span class="text-gradient">Euskadi Gorria</span></h1>
+		</div>
+		<p class="instructions">
+			¡Camaradas! Bienvenidos a la gloriosa página web del Comunismo Vasco. Aquí celebramos a nuestro líder supremo, Asier, y los principios del comunismo vasco.
+		</p>
+		<div class="leader-image">
+			<img src="/asier.png" alt="Líder Supremo Asier" />
+			<p>Nuestro Glorioso Líder: Asier</p>
+		</div>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/ideologia"
+				title="Nuestra Ideología"
+				body="Aprende sobre la mezcla perfecta de cultura vasca e ideales comunistas."
+			/>
+			<Card
+				href="/plan-quinquenal"
+				title="Plan Quinquenal"
+				body="¡Descubre cómo lograremos txakoli para todos en 2028!"
+			/>
+			<Card
+				href="/pintxos"
+				title="Pintxos Colectivizados"
+				body="Explora nuestros bares y restaurantes de pintxos de propiedad comunitaria."
+			/>
+			<Card
+				href="/unete"
+				title="Únete al Partido"
+				body="¡Conviértete en miembro del Partido Comunista Vasco hoy mismo!"
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	.header {
+		position: relative;
+		min-width: 300px;
+		max-height: 550px;
+		overflow: hidden;
+		margin-bottom: 2rem;
+	}
+	.header video {
+		width: 100vw;
+		height: 100%;
+		object-fit: cover;
+	}
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		color: white;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+		z-index: 1;
+	}
+	main {
+		margin: auto;
+		padding: 1rem;
+		/* width: 800px; */
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+		text-align: center;
+	}
+	.leader-image {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.leader-image img {
+		max-width: 300px;
+		border-radius: 50%;
+		border: 4px solid rgb(var(--accent-light));
+	}
+	.leader-image p {
+		margin-top: 1rem;
+		font-weight: bold;
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+	
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		
+		padding: 0;
+	}
+</style>

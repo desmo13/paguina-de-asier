@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Nuestra Ideología | Paraíso Comunista Vasco">
+	<main>
+		<img src="/ideologia.webp" alt="Nuestra Ideología" class="imageIdeologia" />
+		<h1>Nuestra Ideología</h1>
+		<p>
+			El comunismo vasco es una mezcla única de tradiciones vascas y principios comunistas. 
+			Creemos en la colectivización de los caseríos, la distribución equitativa del txakoli 
+			y la abolición de la propiedad privada de los pintxos.
+		</p>
+		<a href="/">Volver a la página principal</a>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-0200%);
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1em;
+		color: rgb(var(--accent-light));
+		text-shadow: -2px 1px 0px rgba(0, 0, 0, 0.7);
+	}
+	a {
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		border-bottom: 1px solid rgb(var(--accent-light));
+	}
+	.imageIdeologia{
+		width: 100%;
+		height: 250px;
+		
+	}
+</style>

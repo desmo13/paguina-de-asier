@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Plan Quinquenal | Paraíso Comunista Vasco">
+	<main>
+		<img src="/Quiquenal.jpg" alt="Plan Quinquenal" class="imagePlanQuinquenal" />
+		<h1>Plan Quinquenal</h1>
+		<p>
+			Nuestro glorioso plan quinquenal tiene como objetivo principal lograr txakoli para todos en 2028. 
+			Esto incluye la colectivización de los viñedos, la construcción de fábricas de botellas y la 
+			formación de brigadas de sumilleres comunistas.
+		</p>
+		<a href="/">Volver a la página principal</a>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1em;
+		color: rgb(var(--accent-light));
+		text-shadow: -2px 1px 0px rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-0200%);
+	}
+	a {
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		border-bottom: 1px solid rgb(var(--accent-light));
+	}
+	.imagePlanQuinquenal{
+		width: 100%;
+		height: 250px;
+		
+	}
+</style>

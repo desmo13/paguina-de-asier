@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Pintxos Colectivizados | Paraíso Comunista Vasco">
+	<main>
+		<img src="/pintxos.jpg" alt="Pintxos Colectivizados" class="imagePintxos" />
+		<h1>Pintxos Colectivizados</h1>
+		<p>
+			En nuestra gloriosa república, todos los bares y restaurantes de pintxos son de propiedad comunitaria. 
+			Cada ciudadano tiene derecho a disfrutar de una selección diaria de pintxos, distribuidos según el 
+			principio "de cada uno según su capacidad, a cada uno según su necesidad (de pintxos)".
+		</p>
+		<a href="/">Volver a la página principal</a>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1em;
+		color: rgb(var(--accent-light));
+		text-shadow: -2px 1px 0px rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-0200%);
+	}
+	a {
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		border-bottom: 1px solid rgb(var(--accent-light));
+	}
+	.imagePintxos{
+		width: 100%;
+		height: 250px;
+	}
+</style>
